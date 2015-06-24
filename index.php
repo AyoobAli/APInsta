@@ -20,6 +20,7 @@
 
 include('APInsta.class.php');
 $insta = new \APInsta\Instagram();
+$insta->setShowErrors( true );
 $insta->login("Username", "Password", true);
 $json = $insta->getNotifications();
 var_dump($json);
