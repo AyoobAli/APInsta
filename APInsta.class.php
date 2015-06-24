@@ -392,7 +392,7 @@ class Instagram
         curl_setopt( $ch, CURLOPT_URL, $this->getURL() );
         curl_setopt( $ch, CURLOPT_CONNECTTIMEOUT, 30 );
         curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-        curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
+        curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, true );
         curl_setopt( $ch, CURLOPT_VERBOSE, 1 );
         curl_setopt( $ch, CURLOPT_HEADER, 1 );
         if ( $this->getUserAgent() != "" ) {
