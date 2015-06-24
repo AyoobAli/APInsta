@@ -20,4 +20,4 @@ $json = $insta->getNotifications();
 // To logout and delete the saved session ID use:-
 // $insta->logout();
 ?>
-```php
+```
